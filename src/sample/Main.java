@@ -7,7 +7,7 @@ import javafx.scene.Scene;
 import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 
-import java.awt.geom.Point2D;
+//TODO OBSTACLES AND MAKE BEST DOT JOIN NEXT GENERATION RATHER THAN STAY STILL AND BRAIN HAS OTHER THINGS IDK
 
 
 public class Main extends Application {
