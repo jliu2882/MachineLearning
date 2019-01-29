@@ -30,7 +30,7 @@ public class Dot extends Circle {
         vel  = vel.add(acc);
         //limits the speed of vel
         double mag = vel.magnitude();
-        if(mag > 5){
+        if(mag > 20){
             vel = vel.normalize();
             vel = vel.multiply(mag);
         }

@@ -33,7 +33,7 @@ public class Brain {
                 //i.e. don't mutate all the time
             //could improve with slight changes rather than total changes
             if(Math.random()<Main.MUTATIONRATE){
-                setAngle(i);
+                setAngle(i,true);
             }
         }
     }
@@ -42,5 +42,18 @@ public class Brain {
         double randomAngle = (int)(Math.random()*(360))+1;
         randomAngle = randomAngle * Math.PI / 180;
         directions[i] = new Point2D(Math.cos(randomAngle),Math.sin(randomAngle));
+    }
+    public void setAngle(int i,boolean tf){
+        directions[i] = new Point2D(change((int) directions[i].getX()),change((int) directions[i].getX()));
+    }
+    public int change(int test){
+        double randDoub = Math.random()*Main.SPREAD;
+        if(randDoub>Main.SPREAD/2){
+            test+=randDoub;
+        }
+        else{
+            test-=randDoub;
+        }
+        return test;
     }
 }

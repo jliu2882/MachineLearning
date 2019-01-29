@@ -23,6 +23,7 @@ public class Main extends Application {
     public static int POPSIZE = 1000;
     public static double MUTATIONRATE = 0.01;
     public static int DIRECTIONSIZE = 400;
+    public static double SPREAD = Math.PI;
     //GOAL PROPERTIES
     public static int GOALX = 250;
     public static int GOALY = 250;
